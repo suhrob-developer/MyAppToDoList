@@ -1,0 +1,98 @@
+    body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container {
+        height: 400px;
+        width: 450px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)
+    }
+    
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    ul>li {
+        text-decoration: none;
+        margin-top: 15px;
+        font-size: 20px;
+        color: rgb(143, 107, 16);
+    }
+    
+    section input {
+        padding: 9px;
+        margin-left: 30px;
+        border-radius: 4px;
+    }
+    
+    .btnTask {
+        height: 30px;
+        width: 130px;
+        margin-left: 10px;
+        border-radius: 40px;
+        border: none;
+        background-color: yellow;
+    }
+    
+    .btn-1 {
+        margin-right: 10px;
+        padding: 9px;
+        border-radius: 50px;
+        background-color: rgb(88, 152, 152);
+        border: none;
+        color: palegreen;
+    }
+    
+    .btn-1:hover {
+        color: red;
+        cursor: pointer;
+    }
+    
+    .btn-2 {
+        padding: 9px;
+        border-radius: 50px;
+        background-color: grey;
+        color: aliceblue;
+        font-weight: 500;
+        border: none;
+    }
+    
+    .btn-2:hover {
+        color: rgb(110, 69, 162);
+        cursor: pointer;
+    }
+    
+    @media(max-width:528px) {
+        .container {
+            max-width: 300px;
+        }
+        .btn-1 {
+            padding: 5px;
+            font-size: 14px;
+        }
+        .btn-2 {
+            padding: 5px;
+            font-size: 14px;
+            font-size: small;
+        }
+        .btnTask {
+            width: 25px;
+            position: sticky;
+            font-size: 11px;
+            background-color: #fff;
+        }
+        ul>li {
+            min-width: 400px;
+            font-size: 11px;
+        }
+        span {
+            font-size: 12px;
+        }
+    }
